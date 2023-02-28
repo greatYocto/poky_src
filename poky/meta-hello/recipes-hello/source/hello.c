@@ -6,7 +6,7 @@ int main(){
 
      while (i < 10) {
 	     printf ("Hello world!\n");
-	     sleep(5);
+	     //sleep(5);
        i++;
      }
 

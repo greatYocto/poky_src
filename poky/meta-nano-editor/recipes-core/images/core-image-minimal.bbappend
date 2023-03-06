@@ -1,1 +1,1 @@
-IMAGE_INSTALL += "nano"
+#IMAGE_INSTALL += "nano"

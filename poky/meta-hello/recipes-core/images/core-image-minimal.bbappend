@@ -1,1 +1,1 @@
-IMAGE_INSTALL += "hello"
+#IMAGE_INSTALL += "hello"

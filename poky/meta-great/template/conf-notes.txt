@@ -4,7 +4,7 @@ Welcome! This is my yocto example.
 You can now run 'bitbake <target>'
 
 Common targets are:
-    core-image-minimal
+   great-image 
 
 You can also run generated qemu images with a command like 'runqemu qemux86'
 

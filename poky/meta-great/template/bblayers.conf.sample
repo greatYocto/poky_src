@@ -12,4 +12,5 @@ BBLAYERS ?= " \
   ##OEROOT##/meta-hello \
   ##OEROOT##/meta-nano-editor \
   ##OEROOT##/meta-great \
+  ##OEROOT##/meta-great-bsp \
   "

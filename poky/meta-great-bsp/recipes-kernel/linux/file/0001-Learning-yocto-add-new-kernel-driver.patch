@@ -1,0 +1,67 @@
+From 8e85a19562732f361bc357a09e4072f56ae4a8c5 Mon Sep 17 00:00:00 2001
+From: great <cloudi@naver.com>
+Date: Tue, 14 Mar 2023 17:12:45 +0000
+Subject: [PATCH] [Learning yocto] add new kernel driver
+
+---
+ drivers/misc/Kconfig           |  5 +++++
+ drivers/misc/Makefile          |  2 ++
+ drivers/misc/new_test_driver.c | 20 ++++++++++++++++++++
+ 3 files changed, 27 insertions(+)
+ create mode 100644 drivers/misc/new_test_driver.c
+
+diff --git a/drivers/misc/Kconfig b/drivers/misc/Kconfig
+index c55b63750757..a5817bb7fd44 100644
+--- a/drivers/misc/Kconfig
++++ b/drivers/misc/Kconfig
+@@ -466,6 +466,11 @@ config PVPANIC
+ 	  a paravirtualized device provided by QEMU; it lets a virtual machine
+ 	  (guest) communicate panic events to the host.
+ 
++config NEW_TEST_DRIVER
++    tristate "Kernel test driver"
++    help
++        This driver is kernel test driver
++
+ source "drivers/misc/c2port/Kconfig"
+ source "drivers/misc/eeprom/Kconfig"
+ source "drivers/misc/cb710/Kconfig"
+diff --git a/drivers/misc/Makefile b/drivers/misc/Makefile
+index c1860d35dc7e..982d477f3513 100644
+--- a/drivers/misc/Makefile
++++ b/drivers/misc/Makefile
+@@ -57,3 +57,5 @@ obj-y				+= cardreader/
+ obj-$(CONFIG_PVPANIC)   	+= pvpanic.o
+ obj-$(CONFIG_HABANA_AI)		+= habanalabs/
+ obj-$(CONFIG_XILINX_SDFEC)	+= xilinx_sdfec.o
++obj-$(CONFIG_NEW_TEST_DRIVER)   += new_test_driver.o
++
+diff --git a/drivers/misc/new_test_driver.c b/drivers/misc/new_test_driver.c
+new file mode 100644
+index 000000000000..c0ac3792d204
+--- /dev/null
++++ b/drivers/misc/new_test_driver.c
+@@ -0,0 +1,20 @@
++#include <linux/module.h>
++
++static int __init new_test_driver_init(void)
++{
++    pr_warn("This is new test driver! \n");
++    return 0;
++}
++
++static void __exit new_test_driver_exit(void)
++{
++    pr_warn("Exit new test driver! \n");
++}
++
++module_init(new_test_driver_init);
++module_exit(new_test_driver_exit);
++
++MODULE_AUTHOR("Dennis Cho");
++MODULE_DESCRIPTION("New test driver");
++MODULE_LICENSE("GPL");
++
+-- 
+2.17.1
+

@@ -1,0 +1,3 @@
+define KFEATURE_DESCRIPTION "Test for .scc"
+kconf non-hardware new-kernel-driver.cfg
+patch 0001-Learning-yocto-add-new-kernel-driver.patch 

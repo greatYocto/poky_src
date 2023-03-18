@@ -1,0 +1,67 @@
+Using .kernel-meta/configs///defconfig as base
+make[1]: Entering directory '/home/great/github/poky_src/build2/tmp/work/great-poky-linux/linux-mykernel/5.4-rc8+git999-r0/linux-mykernel-5.4-rc8+git999'
+  GEN     Makefile
+  HOSTCC  scripts/basic/fixdep
+  HOSTCC  scripts/kconfig/conf.o
+  HOSTCC  scripts/kconfig/confdata.o
+  HOSTCC  scripts/kconfig/expr.o
+  LEX     scripts/kconfig/lexer.lex.c
+  YACC    scripts/kconfig/parser.tab.[ch]
+  HOSTCC  scripts/kconfig/lexer.lex.o
+  HOSTCC  scripts/kconfig/parser.tab.o
+  HOSTCC  scripts/kconfig/preprocess.o
+  HOSTCC  scripts/kconfig/symbol.o
+  HOSTLD  scripts/kconfig/conf
+scripts/kconfig/conf  --allnoconfig Kconfig
+#
+# configuration written to .config
+#
+make[1]: Leaving directory '/home/great/github/poky_src/build2/tmp/work/great-poky-linux/linux-mykernel/5.4-rc8+git999-r0/linux-mykernel-5.4-rc8+git999'
+Value requested for CONFIG_BPF_UNPRIV_DEFAULT_OFF not in final .config
+Requested value:  # CONFIG_BPF_UNPRIV_DEFAULT_OFF is not set
+Actual value:     
+
+Value requested for CONFIG_EFI_CUSTOM_SSDT_OVERLAYS not in final .config
+Requested value:  CONFIG_EFI_CUSTOM_SSDT_OVERLAYS=y
+Actual value:     
+
+Value requested for CONFIG_INET_TABLE_PERTURB_ORDER not in final .config
+Requested value:  CONFIG_INET_TABLE_PERTURB_ORDER=16
+Actual value:     
+
+Value requested for CONFIG_REGMAP_I2C not in final .config
+Requested value:  CONFIG_REGMAP_I2C=m
+Actual value:     CONFIG_REGMAP_I2C=y
+
+Value requested for CONFIG_BLK_DEV_FD_RAWCMD not in final .config
+Requested value:  # CONFIG_BLK_DEV_FD_RAWCMD is not set
+Actual value:     
+
+Value requested for CONFIG_BATTERY_RT5033 not in final .config
+Requested value:  # CONFIG_BATTERY_RT5033 is not set
+Actual value:     
+
+Value requested for CONFIG_VFIO not in final .config
+Requested value:  # CONFIG_VFIO is not set
+Actual value:     
+
+Value requested for CONFIG_VFAT_FS_NO_DUALNAMES not in final .config
+Requested value:  # CONFIG_VFAT_FS_NO_DUALNAMES is not set
+Actual value:     
+
+Value requested for CONFIG_VFAT_NO_CREATE_WITH_LONGNAMES not in final .config
+Requested value:  # CONFIG_VFAT_NO_CREATE_WITH_LONGNAMES is not set
+Actual value:     
+
+Value requested for CONFIG_AUFS_FS not in final .config
+Requested value:  # CONFIG_AUFS_FS is not set
+Actual value:     
+
+Value requested for CONFIG_NFS_DEF_FILE_IO_SIZE not in final .config
+Requested value:  CONFIG_NFS_DEF_FILE_IO_SIZE=4096
+Actual value:     
+
+Value requested for CONFIG_FUNCTION_ERROR_INJECTION not in final .config
+Requested value:  # CONFIG_FUNCTION_ERROR_INJECTION is not set
+Actual value:     CONFIG_FUNCTION_ERROR_INJECTION=y
+

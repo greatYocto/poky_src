@@ -1,0 +1,1 @@
+/home/great/github/poky_src/poky/../source/mykernel/kernel-source/.kernel-meta/configs///defconfig

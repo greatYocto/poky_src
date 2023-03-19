@@ -8,7 +8,6 @@ SRC_URI = "file://Makefile \
           file://mykernelmod.c \
           file://COPYING \
           "
-#PROVIDES = "mykernelmod"
 RPROVIDES_${PN} += "kernel-module-mykernelmod"
 
 KERNEL_MODULE_AUTOLOAD += "mykernelmod"

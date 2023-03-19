@@ -8,6 +8,7 @@ LINGUAS_EN_US = "en-us"
 IMAGE_LINGUAS = "${LINGUAS_KO_KR} ${LINGUAS_EN_US}"
 
 IMAGE_INSTALL += "packagegroup-great"
+IMAGE_INSTALL += "mykernelmod"
 
 IMAGE_OVERHEAD_FACTOR = "1.3"
 

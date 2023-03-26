@@ -29,6 +29,7 @@ export DISTRO="great-distro"
 
 function build_target() {
     source poky/oe-init-build-env build2
+    bitbake-layers add-layer ../poky/meta-myproject
 }
 
 build_target

@@ -9,8 +9,6 @@ BBLAYERS ?= " \
   ##OEROOT##/meta \
   ##OEROOT##/meta-poky \
   ##OEROOT##/meta-yocto-bsp \
-  ##OEROOT##/meta-hello \
-  ##OEROOT##/meta-nano-editor \
   ##OEROOT##/meta-great \
   ##OEROOT##/meta-great-bsp \
   "

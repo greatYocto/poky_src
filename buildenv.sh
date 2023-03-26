@@ -25,6 +25,7 @@ function find_top_dir()
 ROOT=$(find_top_dir)
 export TEMPLATECONF=${ROOT}/poky/meta-great/template/
 export MACHINE="great"
+export DISTRO="great-distro"
 
 function build_target() {
     source poky/oe-init-build-env build2

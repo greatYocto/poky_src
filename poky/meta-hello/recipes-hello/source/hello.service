@@ -1,9 +1,0 @@
-[Unit]
-Description=Hello World startup script
-
-[Service]
-ExecStart=/usr/bin/hello
-
-[Install]
-WantedBy=multi-user.target
-

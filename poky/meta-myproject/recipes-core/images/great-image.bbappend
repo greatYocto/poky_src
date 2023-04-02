@@ -7,3 +7,9 @@ test_postprocess_func(){
 
 ROOTFS_POSTPROCESS_COMMAND += "test_postprocess_func;" 
 
+create_dummy_dir() {
+  mkdir ${IMAGE_ROOTFS}/dummy
+}
+
+ROOTFS_POSTPROCESS_COMMAND += "create_dummy_dir;"
+

@@ -10,3 +10,5 @@ posttest() {
     bbwarn "post func test"
 }
 
+do_test1[nostamp] = "1"
+

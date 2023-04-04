@@ -13,3 +13,9 @@ python do_testB () {
     bb.warn(pythonvar2)
 }
 addtask do_testB before do_testA
+
+python __anonymous() {
+    pythonvar3 = d.getVar('TESTVAR', True)
+    bb.warn(pythonvar3)
+}
+

@@ -14,6 +14,15 @@ do_install() {
     install -m 0755 makevoicemain ${D}${bindir} 
 }
 
+fakeroot do_test() {
+     chown root:root ${D}${bindir}/makevoicemain
+     ls -l ${D}${bindir} > ${WORKDIR}/1.txt
+}
+
+addtask test after do_install before do_package
+#do_test[fakeroot] = "1"
+
+
 #RDEPENDS_${PN} = "makelib"
 DEPENDS = "makelib"
 

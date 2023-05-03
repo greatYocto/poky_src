@@ -21,3 +21,16 @@ S = "${WORKDIR}"
 FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
 
 FILES_${PN} += "${bindir}/makevoicemain"
+
+pkg_postinst_${PN} () {
+	if [ "x$D" = "x" ]; then
+		printf "It shouldn't be executed"
+	else
+		file=$D${bindir}/test.txt
+		printf "This is postinst test.\n" > $file
+	fi
+}
+
+pkg_postinst_ontarget_${PN} () {
+	echo "This is postinst test on target" > ${bindir}/test2.txt
+}

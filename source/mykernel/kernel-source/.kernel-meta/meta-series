@@ -1,7 +1,0 @@
-#
-# scc v0.8
-# processed: Sat Mar 18 18:25:52 UTC 2023
-#
-# This is a scc output file, do not edit
-#
-kconf /home/great/github/poky_src/poky/meta-great-bsp/recipes-kernel/linux/file/defconfig # non-hardware
